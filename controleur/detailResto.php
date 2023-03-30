@@ -31,6 +31,7 @@ $mailU = getMailULoggedOn();
 $aimer = getAimerById($mailU, $idR);
 $critiques = getCritiquerByIdR($idR);
 $maCritique = getCritiquerById($idR, $mailU);
+// $lesEvenements = getEvenementsByIdR($idR)
 
 // traitement si necessaire des donnees recuperees
 ;

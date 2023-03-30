@@ -2,6 +2,23 @@
 
 include_once "bd.inc.php";
 
+// function getEvenementsByIdR($idR) {
+
+//     try {
+//         $cnx = connexionPDO();
+//         $req = $cnx->prepare("select nomE, dateE from evenement where idR=:idR");
+//         $req->bindValue(':idR', $idR, PDO::PARAM_INT);
+
+//         $req->execute();
+
+//         $resultat = $req->fetch(PDO::FETCH_ASSOC);
+//     } catch (PDOException $e) {
+//         print "Erreur !: " . $e->getMessage();
+//         die();
+//     }
+//     return $resultat;
+// }
+
 function getRestoByIdR($idR) {
 
     try {

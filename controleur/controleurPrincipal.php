@@ -17,7 +17,6 @@ function controleurPrincipal($action){
     $lesActions["commenter"] = "commenter.php";
     $lesActions["supprimerCritique"] = "supprimerCritique.php";
 
-    
     if (array_key_exists ( $action , $lesActions )){
         return $lesActions[$action];
     }

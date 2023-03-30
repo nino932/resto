@@ -377,6 +377,25 @@ ALTER TABLE `proposer`
   ADD CONSTRAINT `proposer_ibfk_1` FOREIGN KEY (`idR`) REFERENCES `resto` (`idR`),
   ADD CONSTRAINT `proposer_ibfk_2` FOREIGN KEY (`idTC`) REFERENCES `typeCuisine` (`idTC`);
 
+--   CREATE TABLE evenement (
+-- idE bigint(20) NOT NULL,
+-- nomE varchar(255) DEFAULT NULL,
+-- dateE date DEFAULT NULL,
+-- heureE time DEFAULT NULL,
+-- idR bigint(20) DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- INSERT INTO evenement (idE, nomE, dateE, heureE, idR) VALUES
+-- (1, 'Soirée jeux de société', '2019-03-01', '20:00:00', 1),
+-- (2, 'Soirée jeux de fifa', '2019-02-01', '20:00:00', 2),
+-- (3, 'Soirée jeux de foot', '2019-01-01', '20:00:00', 2);
+
+
+-- Index pour la table evenement
+-- ALTER TABLE evenement
+-- ADD PRIMARY KEY (idE),
+-- ADD KEY idR (idR);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

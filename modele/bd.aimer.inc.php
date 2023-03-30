@@ -2,6 +2,7 @@
 
 include_once "bd.inc.php";
 
+//fonction préparée pour éviter les injections SQL (bindValue = preparé)
 function getAimerByMailU($mailU) {
     try {
         $cnx = connexionPDO();

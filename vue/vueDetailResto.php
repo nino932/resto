@@ -30,6 +30,7 @@
     </ul>
 
 </section>
+<!-- in copie/colle la section entiere et remplace lestypescuisine par lesEvenements -->
 <p id="principal">
     <?php if (count($lesPhotos) > 0) { ?>
         <img src="photos/<?= $lesPhotos[0]["cheminP"] ?>" alt="photo du restaurant" />
